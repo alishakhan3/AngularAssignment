@@ -2,7 +2,7 @@
     <h2 class="title">User Details</h2>
     <div class="details"> 
     <p><strong>ID:</strong> {{ user.id }}</p>
-    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Name:</strong> {{ user.name | uppercase}}</p>
     <p><strong>Username:</strong> {{ user.username }}</p>
     <p><strong>Email:</strong> {{ user.email }}</p>
     <p><strong>Address:</strong> {{ user.address.street }}, {{ user.address.suite }}, {{ user.address.city }}, {{ user.address.zipcode }}</p>

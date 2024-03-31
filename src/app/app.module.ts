@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { UppercasePipe } from './uppercase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserCardComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    UppercasePipe
   ],
   imports: [
     BrowserModule,
