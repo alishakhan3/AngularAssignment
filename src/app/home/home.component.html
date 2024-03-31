@@ -1,0 +1,9 @@
+<div class="title"> 
+    <p>Users List</p>
+  </div>
+  <div style="font-size: 40px; text-align: center; margin-top: 10%;" *ngIf="loading">Loading...</div>
+  <div *ngFor="let user of users">
+    <app-user-card [user]="user" (selectUser)="onSelectUser($event)" (unsubscribeUser)="onUnsubscribe(user.id)"></app-user-card>
+  </div>
+  
+ 
